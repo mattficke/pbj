@@ -12,6 +12,8 @@
   <script src="js/backbone/views/grumble.js"></script>
   <script src="js/backbone/views/grumbleList.js"></script>
   <script src="js/backbone/views/grumbleCreate.js"></script>
+  <script src="js/backbone/views/comment.js"></script>
+  <script src="js/backbone/views/commentList.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -54,5 +56,9 @@
     </form>
   </script>
 
+  <script id="commentTemplate" type="text/x-handlebars-template">
+    <p> {{ content }} </p>
+    <p>Posted By: {{ authorName }} </p>
+  </script>
 </body>
 </html>
